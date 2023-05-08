@@ -4,11 +4,11 @@ import { Cards } from '../classes/cards.js'
 export class Hand extends Cards { 
     constructor() { 
         super(); 
-        this._currentHand = [];
+        this.playedCards = [];
     }
 
-    buildCollection(card) {
-        this.addCards(card);
+    buildCollection() {
+        this.addCards(this.currentCard._suit, this.currentCard._rank, this.currentCard._value);
     }
 
     showHand() { 
@@ -16,7 +16,12 @@ export class Hand extends Cards {
     }
 
     playCard() { 
-        return this.currentCard;
+        this.currentCard = this.cards.at(-1);
     }
+
+    discard() { 
+        this.playedCards.push(this.cards.pop());
+    }
+
 
 }
