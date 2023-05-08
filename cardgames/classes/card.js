@@ -25,19 +25,23 @@ export class Card {
         this._value = value;
     }
 
-    get suite() { 
+    get suit() { 
         return this._suit;
     }
 
     get graphic() { 
-        return suiteGraphics[this._suit]; 
+        return suitGraphics[this.suit]; 
     }
     
     get rank() { 
         return this._rank;
     }
-
+    
     get value() { 
         return this._value;
+    }
+
+    displayCard() {
+        return `${this.rank} ${this.graphic}`;
     }
 };

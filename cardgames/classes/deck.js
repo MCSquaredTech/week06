@@ -13,7 +13,7 @@ const VALUE = [ 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10, 11];
 export class Deck extends Cards { 
     constructor(){
         super()
-        this._shuffled = null;
+        this._shuffled = [];
     }
 
     buildCollection() {
