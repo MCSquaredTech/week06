@@ -1,0 +1,15 @@
+# .gitignore file 
+
+### Node ### 
+node_modules/
+
+# Ignore Logs 
+logs 
+*.log
+npm-debug.log*
+
+
+
+
+# Ignore the dist folder 
+dist

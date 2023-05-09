@@ -9,7 +9,6 @@ export class player {
         this._highScore = 0; 
         // public Hand Object 
         this.hand = Hand();
-
     }
 
     get name() { 
@@ -19,6 +18,7 @@ export class player {
     get score() { 
         return this._score; 
     }
+
     set score(value) { 
         this._score = value;
     }
@@ -26,6 +26,7 @@ export class player {
     get highScore() { 
         return this._highScore;
     }
+    
     set highScore(value) { 
         this._highScore = value;
     }
