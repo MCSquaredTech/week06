@@ -17,7 +17,7 @@ for (let card in deck.shuffled) {
 
 for(let i = 0; i < 26; i++) {
     hand.playCard();
-    console.log(hand.displayCard() + ' ' + hand.rankValue);
+    console.log(hand.displayCard() + ' ' + hand.currentCard.rankValue);
     hand.discard();
 }
 

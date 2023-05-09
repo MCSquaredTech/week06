@@ -1,14 +1,11 @@
-//Base card 
+// Base Class Card 
 // A Data Dictionary of Suite Graphics or Graphi  
 const suitGraphics = ({'Spades': '\u2660', 'Hearts': '\u2665', 
                         'Diamonds': '\u2666', 'Clubs': '\u2663'});
 
-// a Data Dictionary of Ranking Values 
-const cardValues = ([{'rank': '2', 'value': 2}, {'rank': '3', 'value': 3}, {'rank': '4', 'value': 4}, 
-                     {'rank': '5', 'value': 5}, {'rank': '6', 'value': 6}, {'rank': '7', 'value': 7}, 
-                     {'rank': '8', 'value': 8}, {'rank': '9', 'value': 9}, {'rank': '10', 'value': 10}, 
-                     {'rank':'Jack', 'value': 10}, {'rank':'Queen', 'value': 10}, {'rank':'King',  'value': 10}, 
-                     {'rank':'Ace', 'value': 11}]);
+// thirteen cards by Rank - array 
+const RANKS = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 
+                    'Jack', 'Queen', 'King', 'Ace'];
 
 export class Card { 
     // Card is the base class/object for cards - a card 
@@ -37,6 +34,11 @@ export class Card {
         return this._rank;
     }
     
+    // returns the rank value for comparisome in War Card Game
+    get rankValue() { 
+        return RANKS.indexOf(this.rank);
+    }
+
     get value() { 
         return this._value;
     }
