@@ -7,8 +7,8 @@ export class Hand extends Cards {
         this.playedCards = [];
     }
 
-    buildCollection() {
-        this.addCards(this.currentCard._suit, this.currentCard._rank, this.currentCard._value);
+    buildCollection(card) {
+        this.addCards(card._suit, card._rank, card._value);
     }
 
     showHand() { 
@@ -21,6 +21,14 @@ export class Hand extends Cards {
 
     discard() { 
         this.playedCards.push(this.cards.pop());
+    }
+
+    length() { 
+        return this.cards.length;
+    }
+
+    value() { 
+        return this.currentCard.rankValue;
     }
 
 

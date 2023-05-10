@@ -4,7 +4,7 @@ let expect = chai.expect;
 let card = new Card("Spades", "King", 10);
 
 describe("CardClass", function() { 
-    describe("#classCard", function() {
+    describe("#Card Properties & Methods", function() {
         it("Expects to return the Card Suit", function () {
             let x = card.suit;
             expect(x).to.equal("Spades");
@@ -24,6 +24,10 @@ describe("CardClass", function() {
         it("Expects to retrun the Card Ranking Value", function () {
             let x = card.rankValue;
             expect(x).to.equal(11);
+        });
+        it("Expects display function to return..", () => { 
+            let x = card.displayCard();
+            expect(x).to.equal(`King \u2660`);
         });
     });
 });

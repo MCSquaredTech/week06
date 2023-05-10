@@ -1,14 +1,13 @@
-// Play is dependent on Hand 
-import { Hand } from '../classes/hand.js';
+// Player is dependent on the Hand class 
+import { Hand } from './hand.js';
 
-export class player { 
+export class Player extends Hand { 
     constructor(name) { 
+        super();
         // Pirvate varaibles
         this._name = name;
         this._score = 0;
         this._highScore = 0; 
-        // public Hand Object 
-        this.hand = Hand();
     }
 
     get name() { 
@@ -30,6 +29,5 @@ export class player {
     set highScore(value) { 
         this._highScore = value;
     }
-
 
 }
