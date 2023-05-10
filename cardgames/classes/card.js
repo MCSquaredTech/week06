@@ -21,7 +21,7 @@ export class Card {
         this._rank = rank; 
         this._value = value;
     }
-
+    // five read-only properties Suit, Graphics (the suit graphic), Rank, Rank Value, Value
     get suit() { 
         return this._suit;
     }
@@ -43,6 +43,7 @@ export class Card {
         return this._value;
     }
 
+    // One method that displays the card with the suit graphic 
     displayCard() {
         return `${this.rank} ${this.graphic}`;
     }

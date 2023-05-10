@@ -1,6 +1,9 @@
 // Player is dependent on the Hand class 
 import { Hand } from './hand.js';
 
+// The player class extends the hand class 
+// The player class has a player name, score and high score if you track 
+// multiple games. There three Read-Write Properties Name, Score, and HighScore 
 export class Player extends Hand { 
     constructor(name) { 
         super();
