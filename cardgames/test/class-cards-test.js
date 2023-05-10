@@ -1,5 +1,4 @@
 import { Cards } from '../classes/cards.js';
-import { Card } from '../classes/card.js';
 
 let expect = chai.expect;
 let cards = new Cards()
