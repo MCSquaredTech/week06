@@ -3,6 +3,7 @@ import { Card } from '../classes/card.js';
 let expect = chai.expect;
 let card = new Card("Spades", "King", 10);
 
+// Test the Properties and Methods of th Card Class
 describe("CardClass", function() { 
     describe("#Card Properties & Methods", function() {
         it("Expects to return the Card Suit", function () {

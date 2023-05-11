@@ -6,6 +6,7 @@ let assert = chai.assert;
 let cards = new Cards()
 cards.addCards("Spades", "King", 10);
 
+// Test the Properties and Methods of the Cards Class Collection
 describe("ClassCards", function () { 
     describe('#Cards Properties & Method', () => { 
         it("Add a card to the cards collection", function () { 

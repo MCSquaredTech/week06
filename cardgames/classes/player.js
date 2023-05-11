@@ -13,6 +13,7 @@ export class Player extends Hand {
         this._highScore = 0; 
     }
 
+    // Public Read-Write Properties Name, Score, and HighScore
     get name() { 
         return this._name;
     }
